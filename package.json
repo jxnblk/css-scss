@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "css": "^2.1.0",
+    "postcss": "^3.0.7",
     "rework-npm": "^1.0.0"
   }
 }

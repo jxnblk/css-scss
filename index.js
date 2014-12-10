@@ -3,6 +3,8 @@ var css = require('css');
 // attempt to concat imports
 //var rnpm = require('rework-npm');
 
+var postcss = require('postcss');
+
 var calc = require('./lib/calc');
 var media = require('./lib/custom-media');
 var variables = require('./lib/variables');
@@ -11,7 +13,10 @@ module.exports = function(src, options) {
 
   var options = options || {};
 
+
   var ast = css.parse(src);
+  //var ast = postcss.parse(src);
+  //console.log(JSON.stringify(ast, null, 2));
 
   ast = calc(ast);
 
@@ -23,7 +28,6 @@ module.exports = function(src, options) {
   ast = varObject.ast;
   var definitions = varObject.definitions;
 
-  //console.log(JSON.stringify(ast, null, 2));
 
   var scss = css.stringify(ast);
 
