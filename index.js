@@ -1,8 +1,4 @@
 
-var css = require('css');
-// attempt to concat imports
-//var rnpm = require('rework-npm');
-
 var postcss = require('postcss');
 
 var calc = require('./lib/calc');
