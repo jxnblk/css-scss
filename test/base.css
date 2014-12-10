@@ -4,7 +4,7 @@ body {
   background-color: var(--red, #f00);
   background-color: white;
   margin: calc(2 * 4em);
-  padding: calc(2 * var(--space-1));
+  padding: var(--space-2) calc(2 * var(--space-1));
   width: calc(var(--space-4) * 4);
 }
 
@@ -22,6 +22,7 @@ body {
 
   --green: var(--blue);
   --space-1: 1em;
+  --space-2: 2em;
   --space-4: 4em;
 }
 
