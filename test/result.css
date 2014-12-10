@@ -6,7 +6,7 @@ body {
   padding: 2em;
   width: 16em; }
 
-@media ('(min-width: 40em)') {
+@media (min-width: 40em) {
   body {
     color: pink; }
  }

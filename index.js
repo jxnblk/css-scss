@@ -26,7 +26,6 @@ module.exports = function(src, options) {
   root = obj.root;
   varsString = obj.definitions;
 
-
   var scss = postcss().process(root).css;
 
   scss = varsString + '\n' + mediaVarsString + '\n' + scss;
