@@ -1,0 +1,27 @@
+
+body {
+  color: var(--blue);
+  background-color: var(--red, #f00);
+  background-color: white;
+  margin: calc(2 * 4em);
+  padding: calc(2 * var(--space-1));
+  width: calc(var(--space-4) * 4);
+}
+
+@media (--breakpoint-sm) {
+  body { color: pink }
+}
+
+@media (min-width: 50em) {
+  body { color: green }
+}
+
+:root {
+  --blue: #00f;
+  --red: #f00;
+
+  --green: var(--blue);
+}
+
+@custom-media --breakpoint-sm (min-width: 40em);
+
