@@ -21,6 +21,8 @@ body {
   --red: #f00;
 
   --green: var(--blue);
+  --space-1: 1em;
+  --space-4: 4em;
 }
 
 @custom-media --breakpoint-sm (min-width: 40em);
