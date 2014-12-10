@@ -1,0 +1,17 @@
+body {
+  color: #00f;
+  background-color: #f00;
+  background-color: white;
+  margin: 8em;
+  padding: 2em;
+  width: 16em; }
+
+@media ('(min-width: 40em)') {
+  body {
+    color: pink; }
+ }
+
+@media (min-width: 50em) {
+  body {
+    color: green; }
+ }
