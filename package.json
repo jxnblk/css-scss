@@ -10,10 +10,20 @@
   "license": "MIT",
   "dependencies": {
     "css": "^2.1.0",
-    "postcss": "^3.0.7",
-    "rework-npm": "^1.0.0"
+    "postcss": "^3.0.7"
   },
   "devDependencies": {
     "node-sass": "^1.2.3"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jxnblk/css-scss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jxnblk/css-scss/issues"
+  },
+  "homepage": "https://github.com/jxnblk/css-scss"
 }
