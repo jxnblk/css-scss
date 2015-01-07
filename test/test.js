@@ -1,6 +1,7 @@
 var assert = require('assert');
-var cssScss = require('..');
 var fs = require('fs');
+var sass = require('node-sass');
+var cssScss = require('..');
 
 describe('css-scss', function() {
 
@@ -21,28 +22,14 @@ describe('css-scss', function() {
     fs.writeFileSync('./test/fixtures/custom-media.output.scss', outputCss);
     assert.equal(outputCss.trim(), expectedCss.trim());
   });
+
+  it('should be valid scss', function() {
+    var outputCss = cssScss(fixture('basscss-base.css'));
+    assert.doesNotThrow(function() {
+      sass.renderSync({ data:  outputCss });
+    });
+  });
 });
-
-/*
-var fs = require('fs');
-var sass = require('node-sass');
-
-var cssScss = require('..');
-
-var src = fs.readFileSync('./test/base2.css', 'utf8');
-
-var result = cssScss(src);
-
-//console.log('result:');
-//console.log(result);
-
-var rendered = sass.renderSync({ data: result });
-console.log('Rendered with Node Sass');
-//console.log(rendered);
-
-fs.writeFileSync('./test/_base.scss', result);
-fs.writeFileSync('./test/base-compiled.css', rendered);
-*/
 
 function fixture(name) {
   return fs.readFileSync('test/fixtures/' + name, 'utf8').trim();
