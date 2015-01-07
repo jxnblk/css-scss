@@ -1,6 +1,6 @@
 :root {
   --some-var: #fff;
-  --some-other-var: var(--some-other-var);
+  --some-other-var: var(--some-var);
 }
 
 .some-selector {
