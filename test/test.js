@@ -23,6 +23,15 @@ describe('css-scss', function() {
     assert.equal(outputCss.trim(), expectedCss.trim());
   });
 
+  it('should handle variables assigned to other variables', function() {
+    var inputCss = fixture('variables.css');
+    var expectedCss = fixture('variables.expected.scss');
+
+    var outputCss = cssScss(inputCss);
+    fs.writeFileSync('./test/fixtures/variables.output.scss', outputCss);
+    assert.equal(outputCss.trim(), expectedCss.trim());
+  });
+
   it('should be valid scss', function() {
     var outputCss = cssScss(fixture('basscss-base.css'));
     assert.doesNotThrow(function() {

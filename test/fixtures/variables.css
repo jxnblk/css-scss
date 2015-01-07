@@ -1,0 +1,8 @@
+:root {
+  --some-var: #fff;
+  --some-other-var: var(--some-other-var);
+}
+
+.some-selector {
+  color: var(--some-other-var);
+}
