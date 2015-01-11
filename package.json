@@ -1,6 +1,6 @@
 {
   "name": "css-scss",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Convert Rework style CSS to SCSS",
   "main": "index.js",
   "scripts": {
