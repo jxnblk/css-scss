@@ -1,0 +1,34 @@
+
+// Converted Variables
+
+$blue: #00f !default;
+$red: #f00 !default;
+$green: $blue !default;
+$space-1: 1em !default;
+$space-2: 2em !default;
+$space-4: 4em !default;
+
+// Custom Media Query Variables
+
+$breakpoint-sm: '(min-width: 40em)' !default;
+
+/*
+    Custom media test
+*/
+
+body {
+  color: $blue;
+  background-color: $red /* Fallback value:  #f00 */;
+  background-color: white;
+  margin: (2 * 4em);
+  padding: $space-2 (2 * $space-1);
+  width: ($space-4 * 4);
+}
+
+@media #{$breakpoint-sm} {
+  body { color: pink }
+}
+
+@media (min-width: 50em) {
+  body { color: green }
+}

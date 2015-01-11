@@ -1,3 +1,6 @@
+/*
+    Custom media test
+*/
 
 body {
   color: var(--blue);
@@ -27,4 +30,3 @@ body {
 }
 
 @custom-media --breakpoint-sm (min-width: 40em);
-

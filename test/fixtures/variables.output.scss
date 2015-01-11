@@ -1,0 +1,12 @@
+
+// Converted Variables
+
+$some-var: #fff !default;
+$some-other-var: $some-var !default;
+
+// Custom Media Query Variables
+
+
+.some-selector {
+  color: $some-other-var;
+}
