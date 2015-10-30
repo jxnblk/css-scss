@@ -1,8 +1,12 @@
 {
   "name": "css-scss",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "Convert PostCSS style CSS to SCSS",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "scripts": {
     "test": "ava"
   },
@@ -14,8 +18,7 @@
     "postcss": "^5.0.10"
   },
   "devDependencies": {
-    "ava": "^0.3.0",
-    "mocha": "^2.1.0",
+    "ava": "*",
     "node-sass": "^3.4.1"
   },
   "directories": {
