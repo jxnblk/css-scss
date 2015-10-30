@@ -1,7 +1,7 @@
 {
   "name": "css-scss",
-  "version": "0.0.7",
-  "description": "Convert Rework style CSS to SCSS",
+  "version": "0.0.8",
+  "description": "Convert PostCSS style CSS to SCSS",
   "main": "index.js",
   "scripts": {
     "test": "mocha test"
