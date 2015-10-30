@@ -3,7 +3,7 @@
 
 $blue: #00f !default;
 $red: #f00 !default;
-$green: $blue !default;
+$green: $blue !default; /* Fallback value:  blue */
 $space-1: 1em !default;
 $space-2: 2em !default;
 $space-4: 4em !default;

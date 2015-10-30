@@ -23,7 +23,7 @@ body {
   --blue: #00f;
   --red: #f00;
 
-  --green: var(--blue);
+  --green: var(--blue, blue);
   --space-1: 1em;
   --space-2: 2em;
   --space-4: 4em;
