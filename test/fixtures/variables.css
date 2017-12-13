@@ -1,8 +1,18 @@
 :root {
   --some-var: #fff;
   --some-other-var: var(--some-var);
+	--sans-serif: -apple-system, BlinkMacSystemFont,
+								'avenir next', avenir,
+								helvetica, 'helvetica neue',
+								ubuntu,
+								roboto,
+								noto,
+								'segoe ui',
+								arial,
+								sans-serif;
 }
 
 .some-selector {
   color: var(--some-other-var);
+	font-family: var(--sans-serif);
 }
