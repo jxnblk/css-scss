@@ -3,15 +3,7 @@
 
 $some-var: #fff !default;
 $some-other-var: $some-var !default;
-$sans-serif: -apple-system, BlinkMacSystemFont,'avenir next', avenir,helvetica, 'helvetica neue',ubuntu,roboto,noto,'segoe ui',arial,sans-serif !default;
-								,
-								,
-								,
-								,
-								,
-								,
-								,
-								
+$sans-serif: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif !default;
 
 // Custom Media Query Variables
 
