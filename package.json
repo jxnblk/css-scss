@@ -15,7 +15,7 @@
   "dependencies": {
     "balanced-match": "^0.2.0",
     "is-css-root": "^1.0.1",
-    "postcss": "^5.0.10"
+    "postcss": "^6.0.14"
   },
   "devDependencies": {
     "ava": "*",

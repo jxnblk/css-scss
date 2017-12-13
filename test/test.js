@@ -11,8 +11,8 @@ test('converta css to scss', t => {
   var expectedCss = fixture('basscss-base.expected.scss')
 
   var outputCss = cssScss(inputCss).trim()
-  fs.writeFileSync('fixtures/basscss-base.output.scss', outputCss)
-  t.same(outputCss.trim(), expectedCss.trim())
+  fs.writeFileSync('test/fixtures/basscss-base.output.scss', outputCss)
+  t.is(outputCss.trim(), expectedCss.trim())
 })
 
 test('should correctly handle custom media', t => {
@@ -22,8 +22,8 @@ test('should correctly handle custom media', t => {
   var expectedCss = fixture('custom-media.expected.scss')
 
   var outputCss = cssScss(inputCss)
-  fs.writeFileSync('fixtures/custom-media.output.scss', outputCss)
-  t.same(outputCss.trim(), expectedCss.trim())
+  fs.writeFileSync('test/fixtures/custom-media.output.scss', outputCss)
+  t.is(outputCss.trim(), expectedCss.trim())
 })
 
 test('should handle variables assigned to other variables', t => {
@@ -33,19 +33,19 @@ test('should handle variables assigned to other variables', t => {
   var expectedCss = fixture('variables.expected.scss')
 
   var outputCss = cssScss(inputCss)
-  fs.writeFileSync('fixtures/variables.output.scss', outputCss)
-  t.same(outputCss.trim(), expectedCss.trim())
+  fs.writeFileSync('test/fixtures/variables.output.scss', outputCss)
+  t.is(outputCss.trim(), expectedCss.trim())
 })
 
 test('should be valid scss', t => {
   t.plan(1)
 
   var outputCss = cssScss(fixture('basscss-base.css'))
-  t.doesNotThrow(() => {
+  t.notThrows(() => {
     sass.renderSync({ data:  outputCss })
   })
 })
 
 function fixture(name) {
-  return fs.readFileSync('fixtures/' + name, 'utf8').trim()
+  return fs.readFileSync('test/fixtures/' + name, 'utf8').trim()
 }
