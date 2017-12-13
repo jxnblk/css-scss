@@ -6,5 +6,5 @@
 
 .some-selector {
   color: var(--some-other-var);
-	font-family: var(--sans-serif);
+  font-family: var(--sans-serif);
 }
